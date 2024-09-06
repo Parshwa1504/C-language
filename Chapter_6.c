@@ -151,6 +151,62 @@
 //     return 0 ;
 // }
 
+// [1] Write a program to print the address of a variable . Use this address to get the value of this variable.
+
+// #include<stdio.h>
+
+// int main(){
+
+//     int X = 7;
+//     int* P = &X;
+//     printf("The address of the variable X is %p\n",&X);
+//    printf("The address of the variable X is %p\n",P);
+//    printf("The value of X using the address is %d\n",*&X);
+//    printf("The value  of X using the address is %d\n",*P);
+//     return 0 ;
+// }
+
+// [2] Write a program having variable i print the address of i pass this variable to a function and print it's address . Are this address same ? why ?
+
+// #include<stdio.h>
+
+// int Address_Check(int);
+
+// int Address_Check(int a){
+//     printf("The address of the variable i is %p",&a);
+// }
+
+// int main(){
+
+//     int i = 7;
+//     printf("The address of the variable i is %p\n", &i);
+//     Address_Check(i);
+//     return 0 ;
+// }
+
+// No the address of the i different as from main function to any user defined function variable is passed then the copy of the variable is going 
+// not the real variable so that's the reason why both address is different.
+
+// [3] Write a program tochange the value of a variable to ten times of it's current value .
+
+// #include<stdio.h>
+
+// int Change_Number(int*);
+
+// int Change_Number(int* A){
+//      *A = (10) * (*A);
+//      return 0;
+// }
+
+// int main(){
+
+//     int Number = 10;
+//     printf("The value of the given number is %d\n", Number);
+//     Change_Number(&Number);
+//     printf("The value of the given number is %d", Number);
+//     return 0 ;
+// }
+
 
 
 
