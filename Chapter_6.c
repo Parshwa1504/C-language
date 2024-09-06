@@ -207,6 +207,79 @@
 //     return 0 ;
 // }
 
+//                         GOOD
+
+// [4] Write a program using a function which calculate the sum and average of two numbers.Use pointers and print the value of sum and average in main().
+
+// #include<stdio.h>
+
+// int* Sum(int , int);
+// float* Average(float , float);
+
+// float* Average(float A,float B){
+//     float avg = (A+B)/2.0;
+//     float* ptr = &avg ;
+//     printf("The Average of two numbers is %.02f\n", avg);
+//     return ptr ;
+// }
+
+// int* Sum(int X , int Y){
+//     int sum = X + Y;
+//     int* ptr = &sum;
+//     printf("The sum of two numbers is %d\n", sum);
+//     return ptr;
+// }
+
+
+// int main(){
+    
+//     int Number_1 = 23;
+//     int Number_2 = 7;
+//     Average(Number_1,Number_2);
+//     Sum(Number_1,Number_2); 
+//     int* ptr1 = Average(Number_1,Number_2);
+//     float* ptr2 = Sum(Number_1,Number_2); 
+//     printf("The address of average and sum is %u and %u" ,ptr1 , ptr2);
+
+    
+//     return 0 ;
+// }
+
+// [5] Write a program to print the value of a variable i by using "Pointer to pointer" type of variable.
+
+// #include<stdio.h>
+
+// int main(){
+
+//     int i = 10;
+//     int* x = &i;
+//     int** y = &x;
+//     printf("The value of i using the pointer to pointer is %d" , *(*(*&y)) );
+//     return 0 ;
+// }
+
+// [6] In problem 3 using call by value and verify that it dosent change the value of the said variable.
+
+// #include<stdio.h>
+
+// int Change_Number(int);
+
+// int Change_Number(int A){
+//      A = (10) * (A);
+//      return 0;
+// }
+
+// int main(){
+
+//     int Number = 10;
+//     printf("The value of the given number is %d\n", Number);
+//     Change_Number(Number);
+//     printf("The value of the given number is %d", Number);
+//     return 0 ;
+// }
+
+// output : The value of the given number is 10   so no change in value of Number by using call by value function so to change the value of number in 
+//          The value of the given number is 10   user defined function we have to use call by reference function.
 
 
 
