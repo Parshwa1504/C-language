@@ -369,45 +369,158 @@
 
 // [7] create an array of size 3 X 10 cotaining multiplication tables of the number 2,7,9 respectively.
 
-#include<stdio.h>
+// #include<stdio.h>
 
-int main(){
+// int main(){
 
-    int Array[3][10];
-    for (int i = 0; i < 3; i++)
-    {
-        for (int a = 0; a < 10; a++)
-        {
-            Array[0][a] = 2*(a+1);
-        }    
+//     int Array[3][10];
+//     
+//         for (int a = 0; a < 10; a++)
+//         {
+//             Array[0][a] = 2*(a+1);
+//         }    
     
-        for (int a = 0; a < 10; a++)
-        {
-            Array[1][a] = 7*(a+1);
-        } 
+//         for (int a = 0; a < 10; a++)
+//         {
+//             Array[1][a] = 7*(a+1);
+//         } 
 
-        for (int a = 0; a < 10; a++)
-        {
-            Array[2][a] = 9*(a+1);
-        } 
-    }
+//         for (int a = 0; a < 10; a++)
+//         {
+//             Array[2][a] = 9*(a+1);
+//         } 
+//     
     
-    for (int i = 0; i < 3 ; i++)
-    {
-        for (int j = 0; j < 10; j++)
-        {
-            printf("%d " , Array[i][j]);
-        }
-        printf("\n");
+//     for (int i = 0; i < 3 ; i++)
+//     {
+//         for (int j = 0; j < 10; j++)
+//         {
+//             printf("%d " , Array[i][j]);
+//         }
+//         printf("\n");
         
-    }
+//     }
     
-    return 0 ;
-}
+//     return 0 ;
+// }
 
 // [8] Repeat above problem for a custom input given by the user.
 
+// #include<stdio.h>
+
+// int main(){
+
+//     int Number[3];
+//     int Array[3][10];
+    
+//     for (int i = 0; i < 3; i++)
+//     {
+//         printf("Enter Number %d : " , i+1);
+//         scanf("%d" , &Number[i]);
+//     }
+    
+   
+//     for (int i = 0; i < 3; i++)
+//     {
+//       if (i==0)
+//       {
+//         for (int a = 0; a < 10; a++)
+//         {
+//             Array[0][a] = Number[i]*(a+1);
+//         }    
+    
+//       }
+//       else if (i==1)
+//       {
+//         for (int a = 0; a < 10; a++)
+//         {
+//             Array[1][a] = Number[i]*(a+1);
+//         } 
+//       }
+//       else if (i==2)
+//       {
+//         for (int a = 0; a < 10; a++)
+//         {
+//             Array[2][a] = Number[i]*(a+1);
+//         } 
+//       }
+      
+//     }
+    
+//     for (int i = 0; i < 3 ; i++)
+//     {
+//         for (int j = 0; j < 10; j++)
+//         {
+//             printf("%d " , Array[i][j]);
+//         }
+//         printf("\n");
+        
+//     }
+    
+//     return 0 ;
+// }
+
+// OR we can also do this : This is more effective code.
+
+// #include<stdio.h>
+
+// int main() {
+
+//     int Number[3];
+//     int Array[3][10];
+    
+//     // Get user input for 3 numbers
+//     for (int i = 0; i < 3; i++) {
+//         printf("Enter Number %d: ", i + 1);
+//         scanf("%d", &Number[i]);
+//     }
+    
+//     // Fill the array with multiplication tables
+//     for (int i = 0; i < 3; i++) {
+//         for (int a = 0; a < 10; a++) {
+//             Array[i][a] = Number[i] * (a + 1);  // No need for if-else, just use Array[i]
+//         }
+//     }
+    
+//     // Print the multiplication tables
+//     for (int i = 0; i < 3; i++) {
+//         for (int j = 0; j < 10; j++) {
+//             printf("%d ", Array[i][j]);
+//         }
+//         printf("\n");
+//     }
+
+//     return 0;
+// }
+
+//                                  VERY GOOD
+
 // [9] create a 3d array and print the address of it's element in increasing order.
+
+// #include<stdio.h>
+
+// int main(){
+
+//     int Array[2][3][4];
+//     for (int i = 0; i < 2; i++)
+//     {
+//         for (int j = 0; j < 3; j++)
+//         {
+//             for (int k = 0; k < 4; k++)
+//             {
+//                 printf("%u\n",&Array[i][j][k]);
+//             }
+            
+//         }
+        
+//     }
+    
+//     return 0 ;
+// }
+
+
+
+
 
 
 
